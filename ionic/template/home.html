@@ -1,0 +1,27 @@
+<ion-view title="首页">
+	<ion-header-bar allgn-title="center" class="bar-positive">
+		<h1 class="title title-center">首页</h1>
+	</ion-header-bar>
+	<!-- 主体内容 -->
+	<ion-content>
+		<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+			<!-- 幻灯图 -->
+			<!-- auto-play="true" 表示是否自动播放-->
+			<ion-slide-box auto-play="true">
+				<ion-slide ng-repeat="picture in imgList">
+					<div class="box" id="box">
+						<img ng-src="{{picture}}" style="width: 100%;">
+					</div>
+				</ion-slide>				
+			</ion-slide-box>
+			<ion-list>
+				<ion-item ng-repeat="person in dataList" ng-click="gotoDetail(person)">
+					<p>姓名：{{person.Name | smileFilter}}</p>
+					<p>城市：{{person.City}}</p>
+				</ion-item>
+			</ion-list>
+			<!-- 上拉加载 -->
+			<!-- ng-if用于根据数据是否加载完成,判断是否需要加载控件;on-infinite 上拉加载的触发事件,distance表示距离 -->
+			<ion-infinite-scroll ng-if="haveMore" on-infinite="loadMore()" distance='1%'></ion-infinite-scroll>
+	</ion-content>
+</ion-view>

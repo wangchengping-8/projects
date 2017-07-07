@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<title>京东首页京东超市</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="jd_box">
+		<header class="jd_header">
+			<div class="jd_header_box">
+				<a href="#" class="jd_logo"></a>
+				<form action="">
+					<span class="jd_search"></span>
+					<input type="text" placeholder="请输入商品名">
+				</form>
+				<a href="https://plogin.m.jd.com/user/login.action?appid=100&kpkey=&returnurl=https%3A%2F%2Fm.jd.com%3Findexloc%3D1%26sid%3D6863dbf1dd99e467bd713a3c915a8e14" class="jd_login">登录</a>
+			</div>
+		</header>
+	
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <!-- <div class="swiper-slide"><a href="#"><img src="images/8.jpg" alt=""></a></div> -->
+		            <div class="swiper-slide"><a href="#"><img src="images/1.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/2.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/3.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/4.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/5.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/6.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/7.jpg" alt=""></a></div>
+		            <div class="swiper-slide"><a href="#"><img src="images/8.jpg" alt=""></a></div>
+		            <!-- <div class="swiper-slide"><a href="#"><img src="images/1.jpg" alt=""></a></div> -->
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		    </div>
+		<!-- 导航部分 -->
+		<nav class="jd_nav">
+			<div class="jd_nav_box">
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+			</div>
+			<div class="jd_nav_box">
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+				<div>
+					<img src="images/icon.jpg" alt="">
+					<p>分类查询</p>
+				</div>
+			</div>
+		</nav>
+		<!-- 页面内容 -->
+		<main class="jd_product">
+			<section class="jd_product_box">
+				<div class="jd_product_box_title jd_product_box_title_no_border">
+					<div class="title_left">
+						<span class="icon_clock"></span>
+						<span class="title_text">掌上秒杀</span>
+						<div class="title_time"> 
+							<div id="countdown"></div>
+						</div>
+					</div>
+					<div class="title_right">更多>></div>
+				</div>
+				<div class="jd_product_box_con">
+					<ul>
+						<li>
+							<a href="">
+								<img src="images/p1.jpg" alt="">
+							</a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/p1.jpg" alt="">
+							</a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/p1.jpg" alt="">
+							</a>
+							<p>&yen;10</p>
+							<p>&yen;100</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="jd_product_box">
+				<div class="jd_product_box_title">京东超市</div>
+				<div class="jd_product_box_con clear_f">
+					<a href="" class="w_50 b_right f_left"><img src="images/pf1.jpg" alt=""></a>
+					<a href="" class="w_50 f_right b_bottom"><img src="images/pf2.jpg" alt=""></a>
+					<a href="" class="w_50 f_right"><img src="images/pf3.jpg" alt=""></a>
+				</div>
+			</section>
+			<section class="jd_product_box">
+				<div class="jd_product_box_title">京东超市</div>
+				<div class="jd_product_box_con clear_f">
+					<a href="" class="w_50 b_left f_right"><img src="images/pf1.jpg" alt=""></a>
+					<a href="" class="w_50 f_left b_bottom"><img src="images/pf2.jpg" alt=""></a>
+					<a href="" class="w_50 f_left"><img src="images/pf3.jpg" alt=""></a>
+				</div>
+			</section>
+			<section class="jd_product_box">
+				<div class="jd_product_box_title">京东超市</div>
+				<div class="jd_product_box_con clear_f">
+					<a href="" class="w_50 f_left b_left"><img src="images/pf1.jpg" alt=""></a>
+					<a href="" class="w_50 f_right b_bottom"><img src="images/pf2.jpg" alt=""></a>
+					<a href="" class="w_50 f_right"><img src="images/pf3.jpg" alt=""></a>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/script.js"></script>
+
+	<script>
+		    var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        loop: true,
+		        autoplay:3000,
+		        autoplayDisableOnInteraction:false
+		    });
+    </script>
+</body>
+</html>

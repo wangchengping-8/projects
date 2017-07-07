@@ -1,0 +1,265 @@
+/*通用的样式*/
+*{
+	margin:0;
+	padding:0;
+	/*去掉高亮效果*/
+	-webkit-tap-highlight-color:transparent;
+	/*设置元素宽高计算方式*/
+	/*box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。*/
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+}
+/*设置统一的字体*/
+body{
+	font-size:14px;
+	font-family: "微软雅黑";
+	color:#333;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:none;
+}
+/*重置input样式*/
+input{
+	border:none;
+	outline:none;
+	/*清除移动端默认的表单样式*/
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+/*头部*/
+.jd_box{
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+	background-color: rgb(252,244,253);
+}
+.jd_header{
+	position: fixed;
+	left:0;
+	top: 0;
+	height: 44px;
+	width: 100%;
+	z-index: 1000;
+}
+.jd_header_box{
+	background-color: rgba(199,21,33,1);
+	height: 100%;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+	display: flex;
+	align-items:center;
+}
+/*jd logo*/
+.jd_logo{
+	width: 60px;
+	height: 25px;
+	background-image: url(../images/logo.jpg);
+	background-size: 60px 25px;
+	margin:0 5px;
+}
+/*form表单*/
+.jd_header_box>form{
+	flex:1;
+	position: relative;
+}
+/*搜索图标*/
+.jd_search{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left:5px;
+	top: 5px;
+	background-image:url(../images/search.png);
+	background-size:20px 20px;
+}
+/*搜索框*/
+.jd_header_box>form>input{
+	width: 100%;
+	height: 30px;
+	border-radius:15px;
+	font-size: 16px;
+	padding-left: 25px;
+}
+/*右侧的登录*/
+.jd_login{
+	width: 80px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	font-size:16px;
+}
+
+.swiper-slide>a>img,.swiper-slide>a{
+	display: block;
+	width: 100%;
+}
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+/*获取第一个li，nth-child(1)表示第一个li子元素*/
+.jd_banner>.point_box>li:nth-child(1){
+	margin-left: 0
+}
+.jd_banner>.point_box>li.current{
+	background-color: #fff;
+}
+/*导航*/
+.jd_nav{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_nav_box{
+	display: flex;
+	justify-content:space-around;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.jd_nav_box>div{
+	width: 60px;
+	height: 80px;
+}
+.jd_nav_box>div>img{
+	width: 100%;
+	display: block;
+}
+.jd_nav_box>div>p{
+	text-align: center;
+	color: #333;
+}
+/*内容部分*/
+.jd_product{
+	padding: 0 5px;
+	min-width:320px;
+}
+.jd_product_box{
+	width: 100%;
+	background-color: white;
+	margin-top: 10px;
+	min-height: 50px;
+	box-shadow:  0 0 1px #e0e0e0; 
+}
+.jd_product_box_title{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #e0e0e0;
+	padding:0 5px;
+}
+.jd_product_box_title_no_border{
+	border-bottom: none;
+}
+.title_left{
+	float: left;
+}
+.title_right{
+	float: right;
+}
+.icon_clock{
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	background-image: url(../images/clock.png);
+	background-size: 20px 20px;
+	float: left;
+}
+.title_text{
+	color: rgba(199,21,33,1);
+	font-size: 15px;
+	margin-left: 10px;
+	float: left;
+}
+.title_time{
+	float:left;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+.title_time>span{
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+	margin-left: 5px;
+}
+.title_time>.title_colon{
+	background-color: white;
+	color: black;
+	width: 5px;
+}
+.jd_product_box_con{
+	margin-top: 15px;
+}
+.jd_product_box_con>ul{
+	 width: 100%;
+	 overflow: hidden;
+}
+.jd_product_box_con>ul>li{
+	width: 33.33%;
+	float: left;
+}
+.jd_product_box_con>ul>li>a{
+	display: block;
+	width: 100%;
+	border-right: 1px solid #c0c0c0;
+}
+.jd_product_box_con>ul>li:last-child>a{
+	border-right: none;
+}
+.jd_product_box_con>ul>li>a>img{
+	width: 80%;
+	display: block;
+	margin:0 auto;
+}
+.jd_product_box_con>ul>li>p{
+	color:rgba(199,21,33,1);
+	text-align: center;
+	margin-top: 5px;
+}
+.jd_product_box_con>ul>li>p:last-child{
+	color:#666;
+	text-decoration:line-through;
+}
+
+
+/*内容  图片 通用*/
+.w_50{
+	width: 50%;
+	display:block; 
+}
+.w_50>img{
+	width: 100%;
+	display: block;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.clear_f{
+	overflow: hidden;
+}
+.b_left{
+	border-left: 1px solid #e0e0e0;
+}
+.b_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+.b_right{
+	border-right: 1px solid #e0e0e0;
+}
